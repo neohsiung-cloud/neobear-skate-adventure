@@ -1,0 +1,47 @@
+{
+  "copyright": "© Neobear",
+  "assets": [
+    {
+      "file": "neo.glb",
+      "sha256": "6ae6b6ecd037794b69c8ef8609859d0c1b8d934890df4c85ee384e5104748bca",
+      "source_name": "NeoBear_Original_GameRig.glb",
+      "transformation": "Byte-identical copy"
+    },
+    {
+      "file": "cover-mobile.png",
+      "sha256": "8391af8cc8166b0eded9b96ce96904e7a8bafab090d793db6be441e125577a27",
+      "source_name": "neobearpose_001.png",
+      "transformation": "Proportional resolution reduction only, original artwork retained"
+    },
+    {
+      "file": "doctor-mobile.png",
+      "sha256": "302ba6d8eb8077025471a59cdb452e77d4965767eeaef735386791cd92b91fc8",
+      "source_name": "Pandapose_001.png",
+      "transformation": "Proportional resolution reduction only, original artwork retained"
+    },
+    {
+      "file": "doctor-voice.mp3",
+      "sha256": "a10208f642d1a6702d226a82b913f79897958d236689d26eb0d476fffefb8dbf",
+      "source_name": "8.咕咚博士.mp3",
+      "transformation": "Byte-identical copy"
+    },
+    {
+      "file": "intro.mp4",
+      "sha256": "e2a53fc7d794c2f04005c67dc824cb0f0ac5351739c38bf468f1b5ec7fa7d795",
+      "source_name": "NeoBear_ZH_2s_portrait_ALIGNED.mp4",
+      "transformation": "Byte-identical copy"
+    },
+    {
+      "file": "skateboard.jpg",
+      "sha256": "617a5c45356e0228ce6cd9ded31496f441af620e916341f43730311944b0feca",
+      "source_name": "huaban.jpg",
+      "transformation": "Byte-identical copy"
+    },
+    {
+      "file": "dream-town-bgm.mp3",
+      "sha256": "49e3507da37db5cc792ebe6d7c15392e8543fa153b513a7ab8d9595a0ab1db84",
+      "source_name": "尼奥用背景音乐61秒Dream Town Transition Song.mp3",
+      "transformation": "Byte-identical copy"
+    }
+  ]
+}
