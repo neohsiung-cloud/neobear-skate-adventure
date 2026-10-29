@@ -23,6 +23,11 @@ export function makeSkatingPose(neo){
  }
  neo.updateMatrixWorld(true);return records;
 }
-export function animateSkatingPose(records,{time=0,jump=0,turn=0}={}){
- for(const d of records){d.bone.quaternion.copy(d.posed);let axis,angle=0;if(d.bone.name==='Chest_M'){axis=new THREE.Vector3(1,0,0);angle=-.018*Math.sin(time*4)-jump*.045}if(d.bone.name==='Head_M'){axis=new THREE.Vector3(0,0,1);angle=-turn*.17}if(axis)d.bone.quaternion.multiply(new THREE.Quaternion().setFromAxisAngle(axis.applyQuaternion(d.world.clone().invert()),angle))}
+export function animateSkatingPose(records,{time=0,jump=0,turn=0,greet=0,wave=0}={}){
+ for(const d of records){d.bone.quaternion.copy(d.posed);let axis,angle=0;if(d.bone.name==='Chest_M'){axis=new THREE.Vector3(1,0,0);angle=-.018*Math.sin(time*4)-jump*.045}if(d.bone.name==='Head_M'){axis=new THREE.Vector3(0,0,1);angle=-turn*.17}if(axis)d.bone.quaternion.multiply(new THREE.Quaternion().setFromAxisAngle(axis.applyQuaternion(d.world.clone().invert()),angle));
+  if(greet>0){
+   const axis=new THREE.Vector3(0,0,1).applyAxisAngle(new THREE.Vector3(0,1,0),STANCE.yaw).applyQuaternion(d.world.clone().invert());
+   const a=d.bone.name==='Shoulder_R'?-1.75*greet:d.bone.name==='Elbow_R'?-.45*greet:d.bone.name==='Wrist_R'?.30*wave:0;
+   if(a)d.bone.quaternion.multiply(new THREE.Quaternion().setFromAxisAngle(axis,a));
+  }}
 }
